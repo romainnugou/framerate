@@ -1,0 +1,71 @@
+{
+  "search": {
+    "person": "Person",
+    "movie": "Movie",
+    "placeholder": "Search..."
+  },
+  "drawer": {
+    "home": "Home",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode"
+  },
+  "home": {
+    "title": "How much do you like movies?",
+    "subtitle": "Test your knowledge about cinema!"
+  },
+  "games": {
+    "director": {
+      "title": "Who directed this?",
+      "description": "Find the director of these movies.",
+      "guessFieldPlaceholder": "Guess the director"
+    },
+    "cast": {
+      "title": "Who plays in this movie?",
+      "description": "Find the five main actresses or actors in these movies.",
+      "guessFieldPlaceholder": "Guess the cast"
+    },
+    "bestRated": {
+      "title": "Best movies?",
+      "description": "Find the highest rated movies of these directors and actors.",
+      "guessFieldPlaceholder": "Guess the movies",
+      "actress": "Actress",
+      "actor": "Actor",
+      "director": "Director",
+      "directress": "Director"
+    },
+    "link": {
+      "title": "Find the link",
+      "description": "Connect two actors with movies they starred in and actors they both played with.",
+      "from": "From",
+      "to": "to",
+      "searchMovie": "Search a movie",
+      "searchActor": "Search an actor",
+      "congratulations": "Congratulations!"
+    }
+  },
+  "gameCard": {
+    "configure": "Configure",
+    "quickGame": "Quick game",
+    "letsPlay": "Let's play",
+    "comingSoon": "Coming soon"
+  },
+  "gameForm": {
+    "modalTitle": "Configure your game",
+    "countries": "Countries",
+    "allCountries": "All countries",
+    "between": "Between",
+    "and": "And",
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "searchActor": "Search actor",
+    "startGame": "Start game"
+  },
+  "gameContent": {
+    "revealAnswer": "Reveal answer",
+    "revealAnswers": "Reveal answers",
+    "nextMovie": "Next movie",
+    "noEnoughDataPerson": "Sorry, we don't have enough data on this person for this game."
+  }
+}

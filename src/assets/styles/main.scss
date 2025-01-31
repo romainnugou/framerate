@@ -1,0 +1,291 @@
+@use "sass:math";
+
+$defaultPadding: 2rem;
+$smallPadding: 1.5rem;
+$verySmallPadding: 1rem;
+
+$defaultBorderRadius: 1rem;
+
+$fontFamily: "Hind Siliguri",
+sans-serif;
+$fontWeight: 300;
+
+@mixin transition() {
+  transition: 0.25s;
+}
+
+// Body
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: 1rem;
+}
+
+// Header
+
+.headerBox {
+  display: flex;
+  flex-direction: column;
+
+  .headerLeftBox {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .headerBox {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .headerLeftBox {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Games
+
+.game-field.game-field-success {
+  background-color: #4ab24b;
+}
+.game-field.game-field-revealed {
+  background-color: #6699CC;
+}
+.game-field.game-field-success .Mui-disabled,
+.game-field.game-field-revealed .Mui-disabled {
+  -webkit-text-fill-color: white;
+}
+
+.MuiCardMedia-root.gameBackdrop {
+  height: 30vh;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.MuiCardMedia-root.gameBackdrop.gameBackdropLight {
+  opacity: 0.15;
+}
+.MuiCardMedia-root.gamePoster,
+.MuiCardMedia-root.gameProfilePic {
+  z-index: 1000;
+}
+.MuiSkeleton-root.gamePoster,
+.MuiSkeleton-root.gameProfilePic {
+  z-index: 900;
+}
+.MuiCardMedia-root.gamePoster,
+.MuiSkeleton-root.gamePoster {
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  width: 20vh;
+  height: 30vh;
+  border-radius: 4px;
+}
+.MuiCardMedia-root.gameProfilePic,
+.MuiSkeleton-root.gameProfilePic {
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+}
+.MuiCardContent-root.gameCardContent {
+  margin-left: 0;
+  margin-top: 3vh;
+  min-height: 10vh;
+
+  .MuiTypography-root.gameH3 {
+    font-size: 2rem;
+
+    .gameH3Span {
+      font-size: 50%;
+      opacity: 0.5;
+    }
+  }
+}
+.MuiCardContent-root.gameCardContent.gameCardContentTop {
+  min-height: 0;
+  
+  .MuiTypography-root.gameH3 {
+    margin: 0;
+  }
+}
+.MuiCardContent-root.gameCardContent.gameCardContentBestRatedTitle {
+  margin-top: 35vh;
+  min-height: 0;
+
+  .MuiTypography-root.gameH3 {
+    margin: 0;
+  }
+}
+.MuiCardContent-root.gameCardContentCasting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * {
+    width: 100%;
+    max-width: 600px;
+    margin: 0.5rem;
+  }
+} 
+
+@media screen and (max-width: 500px) {
+  .MuiCardContent-root.gameButtonsCardContent .MuiButton-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .MuiCardMedia-root.gameBackdrop {
+    height: 20vh;
+  }
+  .MuiCardMedia-root.gamePoster,
+  .MuiSkeleton-root.gamePoster {
+    top: 3vh;
+    left: 3vh;
+    width: 20vh;
+    height: 30vh;
+  }
+  .MuiCardMedia-root.gameProfilePic,
+  .MuiSkeleton-root.gameProfilePic {
+    top: 3vh;
+    left: 3vh;
+    width: 20vh;
+    height: 20vh;
+  }
+  .MuiCardContent-root.gameCardContent {
+    margin-left: 23vh;
+    margin-top: 0;
+    min-height: 10vh;
+  
+    .MuiTypography-root.gameH3 {
+      font-size: 2rem;
+    }
+  }
+  .MuiCardContent-root.gameCardContent.gameCardContentBestRatedTitle {
+    min-height: 0;
+    margin-top: 2vh;
+
+    .MuiTypography-h3 {
+      margin: 1rem 0 0;
+    }
+  }
+  .MuiCardContent-root.gameCardContent.gameCardContentTop {
+    margin-top: -18vh;
+  }
+  .MuiCardContent-root.gameCardContentCasting {
+    margin-left: 23vh;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .MuiCardMedia-root.gameBackdrop {
+    height: 30vh;
+  }
+  .MuiCardMedia-root.gamePoster,
+  .MuiSkeleton-root.gamePoster {
+    top: 5vh;
+    left: 5vh;
+    width: 28vh;
+    height: 42vh;
+  }
+  .MuiCardMedia-root.gameProfilePic,
+  .MuiSkeleton-root.gameProfilePic {
+    top: 5vh;
+    left: 5vh;
+    width: 30vh;
+    height: 30vh;
+  }
+  .MuiCardContent-root.gameCardContent {
+    margin-left: 35vh;
+    min-height: 20vh;
+
+    .MuiTypography-root.gameH3 {
+      font-size: 3rem;
+    }
+  }
+  .MuiCardContent-root.gameCardContent.gameCardContentTop {
+    margin-top: -26vh;
+  }
+  .MuiCardContent-root.gameCardContentCasting {
+    margin-left: 35vh;
+  }
+}
+
+.link-container {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    z-index: 100;
+
+    .link-delete-box {
+      position: absolute;
+      width: 70px;
+      padding-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  > .link-line {
+    position: absolute;
+    margin: 0 50px;
+    width: calc(100% - 100px);
+    border-top: 1px dashed grey;
+    z-index: 1;
+  }
+
+  .link-placeholder {
+    cursor: pointer;
+  }
+  .link-placeholder.link-focused-placeholder {
+    outline: 5px solid #6da7d6;
+  } 
+}
+.link-container.link-container-success > .link-line {
+  border-top: 2px solid green;
+}
+
+@media screen and (max-width: 767px) {
+  .link-container {
+    flex-direction: column;
+
+    > * {
+      margin: 1rem;
+      position: relative;
+
+      .link-delete-box {
+        position: absolute;
+        top: calc(50% - 15px);
+        margin-left: 80px;
+        width: inherit;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    > .link-line {
+      position: absolute;
+      margin: 50px 0 250px;
+      left: 50%;
+      height: calc(100% - 300px);
+      border-top: 0;
+      border-left: 1px dashed grey;
+      z-index: 1;
+    }
+  }
+  .link-container.link-container-success > .link-line {
+    border-top: 0;
+    border-left: 2px solid green;
+  }
+}

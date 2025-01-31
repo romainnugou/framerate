@@ -1,0 +1,71 @@
+{
+  "search": {
+    "person": "Personne",
+    "movie": "Film",
+    "placeholder": "Rechercher ..."
+  },
+  "drawer": {
+    "home": "Accueil",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre"
+  },
+  "home": {
+    "title": "À quel point aimez-vous le cinéma ?",
+    "subtitle": "Teste tes connaissances en matière de films !"
+  },
+  "games": {
+    "director": {
+      "title": "Qui a réalisé ce film ?",
+      "description": "Trouvez le réalisateur de ces films.",
+      "guessFieldPlaceholder": "Trouvez le réalisateur"
+    },
+    "cast": {
+      "title": "Qui joue dans ce film ?",
+      "description": "Trouvez les cinq actrices ou acteurs principaux de ces films.",
+      "guessFieldPlaceholder": "Trouvez les actrices et acteurs"
+    },
+    "bestRated": {
+      "title": "Meilleurs films ?",
+      "description": "Trouvez les films les mieux notés de ces réalisateurs ou acteurs.",
+      "guessFieldPlaceholder": "Trouvez les films",
+      "actress": "Actrice",
+      "actor": "Acteur",
+      "director": "Réalisateur",
+      "directress": "Réalisatrice"
+    },
+    "link": {
+      "title": "Trouvez le lien",
+      "description": "Reliez deux acteurs grâce aux films dans lesquels ils ont joué et aux acteurs avec lesquels ils ont tous deux joué.",
+      "from": "De",
+      "to": "à",
+      "searchMovie": "Chercher un film",
+      "searchActor": "Chercher un acteur",
+      "congratulations": "Félicitations!"
+    }
+  },
+  "gameCard": {
+    "configure": "Configurer",
+    "quickGame": "Jeu rapide",
+    "letsPlay": "Commencer à jouer",
+    "comingSoon": "Bientôt disponible"
+  },
+  "gameForm": {
+    "modalTitle": "Configure ton jeu",
+    "countries": "Pays",
+    "allCountries": "Tous les pays",
+    "between": "Entre",
+    "and": "Et",
+    "difficulty": "Difficulté",
+    "easy": "Facile",
+    "medium": "Moyen",
+    "hard": "Difficile",
+    "searchActor": "Cherchez un acteur",
+    "startGame": "Commencer"
+  },
+  "gameContent": {
+    "revealAnswer": "Révéler la réponse",
+    "revealAnswers": "Révéler les réponses",
+    "nextMovie": "Film suivant",
+    "noEnoughDataPerson": "Désolé, nous n'avons pas assez de données sur cette personne pour ce jeu."
+  }
+}
